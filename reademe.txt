@@ -1,0 +1,74 @@
+# readme.md
+
+this package is navigation_no_ros
+
+
+##branch : master
+costmap_2d_test provide static layer and inflation function, bust still has bug.
+and architecture not consistant with ros-indigo version, and dont have dynamic 
+update and obstacle avoidance function.
+members:
+  * costmpa_2d_test
+  * my_navfn
+execute:
+  * test : load map and inflaiton obstacle , and plan a path ,and simple local planner, 
+           the robot model is ideal and simple, react time is 1second.
+  * gazebo_test : robot model use gazebo ,the same code with test.
+
+##branch : pc_version 
+debug costmap_2d.new , and fix it to work. Debug costmap_2d.new use gazebo and opencv,
+
+goal:
+  * static layer incoming map
+  * dynamic costmap
+  * obstacle avoidance
+members:
+  * costmap_2d.new
+  * my_navfn
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#past
+李小鹏：
+costmap_2d_test:
+1.使用libcostmap_2d.so所需的头文件
+#include <costmap_2d_test/costmap_2d_test.h>
+
+2.在程序中使用时：
+  costmap_2d_test::Costmap2D_Test costmap2d_;
+  costmap2d_.updateMap();
+
+王景恒：
+# my_navfn
+1.使用libmy_navfn.so所需的头文件
+#include <my_navfn/navfn_no_ros.h>
+
+
+2.在程序中使用时：
+* 宣告
+                navfn::NavfnNoROS* test_planner_;
+
+* 實體化
+ 		test_planner_ = new navfn::NavfnNoROS();
+		test_planner_->initializeNoRos(planner_costmap_ros_->getCostmap());
+
+* startH : Header::PoseStamped 
+* goalH : Header::PoseStamped 
+
+		test_planner_->makePlanNoRos(startH,goalH,0.0,*test_plan_);
+

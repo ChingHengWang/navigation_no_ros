@@ -1,0 +1,8 @@
+path=/home/zach/nav_ws/pepperHost1/navigation_no_ros/pkg/costmap_2d_test/map/office2.yaml
+cost_scaling_factor=0.8
+robot_radius=0.4
+padding=0.4
+inflation_radius=2.0
+max_obstacle_height_=2.0
+
+

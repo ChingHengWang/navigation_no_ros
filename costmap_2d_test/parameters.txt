@@ -1,0 +1,7 @@
+#Static_layer
+lethal_cost_threshold=100
+subscribe_to_updates=no
+trinary_costmap=yes
+start_index=1
+end_index=780
+

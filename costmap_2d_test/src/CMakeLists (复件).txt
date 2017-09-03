@@ -1,0 +1,40 @@
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_module ${CMAKE_MODULE_PATH})
+
+FIND_PACKAGE(Boost REQUIRED COMPONENTS system thread)
+FIND_PACKAGE(Eigen3 REQUIRED)
+
+MESSAGE("DEBUG eigen3include_dir: ${EIGEN3_INCLUDE_DIR}")
+
+ADD_LIBRARY(costmap_2d
+  costmap_math.cpp
+  array_parser.cpp
+  observation_buffer.cpp
+  footprint.cpp
+  map_loader.cpp
+  costmap_2d.cpp
+)
+
+
+include_directories(
+    ${Boost_INCLUDE_DIR}
+    ${EIGEN3_INCLUDE_DIR}
+)
+
+
+find_package(PkgConfig)
+pkg_check_modules(NEW_YAMLCPP yaml-cpp>=0.5)
+if(NEW_YAMLCPP_FOUND)
+add_definitions(-DHAVE_NEW_YAMLCPP)
+endif(NEW_YAMLCPP_FOUND)
+
+#ADD_EXECUTABLE( costmap2dros costmap_2d_ros.cpp )
+ADD_EXECUTABLE( costmap2d costmap_2d.cpp )
+TARGET_LINK_LIBRARIES( costmap2d
+    costmap_2d
+    yaml-cpp
+     SDL
+    SDL_image
+   ${Boost_LIBRARIES}
+   )
+
+
