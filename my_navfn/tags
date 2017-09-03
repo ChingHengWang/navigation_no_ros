@@ -1,0 +1,276 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Angular	include/header.h	/^struct Angular$/;"	s	namespace:arc
+COSTMAP_2D_COSTMAP_2D_H_	include/costmap_2d/costmap_2d.h	39;"	d
+COSTMAP_2D_COST_VALUES_H_	include/costmap_2d/cost_values.h	38;"	d
+COSTTYPE	include/navfn/navfn.h	71;"	d
+COST_FACTOR	include/navfn/navfn.h	65;"	d
+COST_NEUTRAL	include/navfn/navfn.h	64;"	d
+COST_OBS	include/navfn/navfn.h	51;"	d
+COST_OBS_ROS	include/navfn/navfn.h	52;"	d
+COST_UNKNOWN_ROS	include/navfn/navfn.h	50;"	d
+ChannelFloat32	include/header.h	/^struct ChannelFloat32$/;"	s	namespace:arc
+Costmap2D	include/costmap_2d/costmap_2d.h	/^class Costmap2D$/;"	c	namespace:costmap_2d
+Costmap2D	src/costmap_2d.cpp	/^Costmap2D::Costmap2D() :$/;"	f	class:costmap_2d::Costmap2D
+Costmap2D	src/costmap_2d.cpp	/^Costmap2D::Costmap2D(const Costmap2D& map) :$/;"	f	class:costmap_2d::Costmap2D
+Costmap2D	src/costmap_2d.cpp	/^Costmap2D::Costmap2D(unsigned int cells_size_x, unsigned int cells_size_y, double resolution,$/;"	f	class:costmap_2d::Costmap2D
+FREE_SPACE	include/costmap_2d/cost_values.h	/^static const unsigned char FREE_SPACE = 0;$/;"	m	namespace:costmap_2d
+HEADER_H	include/header.h	2;"	d
+Header	include/header.h	/^struct Header$/;"	s	namespace:arc
+INSCRIBED_INFLATED_OBSTACLE	include/costmap_2d/cost_values.h	/^static const unsigned char INSCRIBED_INFLATED_OBSTACLE = 253;$/;"	m	namespace:costmap_2d
+INVSQRT2	src/navfn.cpp	550;"	d	file:
+INVSQRT2	src/navfn.cpp	635;"	d	file:
+LETHAL_OBSTACLE	include/costmap_2d/cost_values.h	/^static const unsigned char LETHAL_OBSTACLE = 254;$/;"	m	namespace:costmap_2d
+LaserScan	include/header.h	/^struct LaserScan$/;"	s	namespace:arc
+Linear	include/header.h	/^struct Linear$/;"	s	namespace:arc
+MY_NAVFN_NAVFN_NO_ROS_H_	include/my_navfn/navfn_no_ros.h	2;"	d
+MapLocation	include/costmap_2d/costmap_2d.h	/^struct MapLocation$/;"	s	namespace:costmap_2d
+MapMetaData	include/header.h	/^struct MapMetaData$/;"	s	namespace:arc
+MarkCell	include/costmap_2d/costmap_2d.h	/^    MarkCell(unsigned char* costmap, unsigned char value) :$/;"	f	class:costmap_2d::Costmap2D::MarkCell
+MarkCell	include/costmap_2d/costmap_2d.h	/^  class MarkCell$/;"	c	class:costmap_2d::Costmap2D
+NO_INFORMATION	include/costmap_2d/cost_values.h	/^static const unsigned char NO_INFORMATION = 255;$/;"	m	namespace:costmap_2d
+NavFn	include/navfn/navfn.h	/^  class NavFn$/;"	c	namespace:navfn
+NavFn	src/navfn.cpp	/^  NavFn::NavFn(int xs, int ys)$/;"	f	class:navfn::NavFn
+NavfnNoROS	include/my_navfn/navfn_no_ros.h	/^  class NavfnNoROS {$/;"	c	namespace:navfn
+NavfnNoROS	src/navfn_no_ros.cpp	/^  NavfnNoROS::NavfnNoROS() $/;"	f	class:navfn::NavfnNoROS
+NavfnNoROS	src/navfn_no_ros.cpp	/^  NavfnNoROS::NavfnNoROS(costmap_2d_test::Costmap2D_Test* costmap)$/;"	f	class:navfn::NavfnNoROS
+OccupancyGrid	include/header.h	/^struct OccupancyGrid$/;"	s	namespace:arc
+OccupancyGridUpdate	include/header.h	/^struct OccupancyGridUpdate$/;"	s	namespace:arc
+Odometry	include/header.h	/^struct Odometry$/;"	s	namespace:arc
+POT_HIGH	include/navfn/navfn.h	75;"	d
+PRIORITYBUFSIZE	include/navfn/navfn.h	78;"	d
+ParameterReader	include/header.h	/^    ParameterReader( string filename="\/home\/zach\/nav_ws\/pepperHost1\/navigation_no_ros\/pkg\/costmap_2d_test\/parm\/parameters.txt" )$/;"	f	class:arc::ParameterReader
+ParameterReader	include/header.h	/^class ParameterReader$/;"	c	namespace:arc
+Path	include/header.h	/^struct Path$/;"	s	namespace:arc
+Point	include/header.h	/^struct Point$/;"	s	namespace:arc
+PointCloud	include/header.h	/^struct PointCloud$/;"	s	namespace:arc
+PointStamped	include/header.h	/^struct PointStamped$/;"	s	namespace:arc
+Polygon	include/header.h	/^struct Polygon$/;"	s	namespace:arc
+PolygonOutlineCells	include/costmap_2d/costmap_2d.h	/^    PolygonOutlineCells(const Costmap2D& costmap, const unsigned char* char_map, std::vector<MapLocation>& cells) :$/;"	f	class:costmap_2d::Costmap2D::PolygonOutlineCells
+PolygonOutlineCells	include/costmap_2d/costmap_2d.h	/^  class PolygonOutlineCells$/;"	c	class:costmap_2d::Costmap2D
+PolygonStamped	include/header.h	/^struct PolygonStamped$/;"	s	namespace:arc
+Pose	include/header.h	/^struct Pose$/;"	s	namespace:arc
+PoseStamped	include/header.h	/^struct PoseStamped$/;"	s	namespace:arc
+PoseWithCovariance	include/header.h	/^struct PoseWithCovariance$/;"	s	namespace:arc
+Position2DInt	include/header.h	/^struct Position2DInt$/;"	s	namespace:arc
+Quaternion	include/header.h	/^struct Quaternion$/;"	s	namespace:arc
+QuaternionStamped	include/header.h	/^struct QuaternionStamped$/;"	s	namespace:arc
+Transform	include/header.h	/^struct Transform$/;"	s	namespace:arc
+TransformStamped	include/header.h	/^struct TransformStamped$/;"	s	namespace:arc
+Twist	include/header.h	/^struct Twist$/;"	s	namespace:arc
+TwistWithCovariance	include/header.h	/^struct TwistWithCovariance$/;"	s	namespace:arc
+Vector3	include/header.h	/^struct Vector3$/;"	s	namespace:arc
+Vector3Stamped	include/header.h	/^struct Vector3Stamped$/;"	s	namespace:arc
+_NAVFN_H	include/navfn/navfn.h	42;"	d
+access_	include/costmap_2d/costmap_2d.h	/^  mutex_t* access_;$/;"	m	class:costmap_2d::Costmap2D
+allow_unknown_	include/my_navfn/navfn_no_ros.h	/^      bool allow_unknown_;$/;"	m	class:navfn::NavfnNoROS
+angle_increment	include/header.h	/^  float  angle_increment;$/;"	m	struct:arc::LaserScan
+angle_max	include/header.h	/^  float  angle_max;$/;"	m	struct:arc::LaserScan
+angle_min	include/header.h	/^  float  angle_min;$/;"	m	struct:arc::LaserScan
+angular	include/header.h	/^  Angular angular;$/;"	m	struct:arc::Twist
+arc	include/header.h	/^namespace arc$/;"	n
+bresenham2D	include/costmap_2d/costmap_2d.h	/^    inline void bresenham2D(ActionType at, unsigned int abs_da, unsigned int abs_db, int error_b, int offset_a,$/;"	f	class:costmap_2d::Costmap2D
+calcNavFnAstar	src/navfn.cpp	/^    NavFn::calcNavFnAstar()$/;"	f	class:navfn::NavFn
+calcNavFnDijkstra	src/navfn.cpp	/^    NavFn::calcNavFnDijkstra(bool atStart)$/;"	f	class:navfn::NavFn
+calcPath	src/navfn.cpp	/^    NavFn::calcPath(int n, int *st)$/;"	f	class:navfn::NavFn
+cellDistance	src/costmap_2d.cpp	/^unsigned int Costmap2D::cellDistance(double world_dist)$/;"	f	class:costmap_2d::Costmap2D
+cells_	include/costmap_2d/costmap_2d.h	/^    std::vector<MapLocation>& cells_;$/;"	m	class:costmap_2d::Costmap2D::PolygonOutlineCells
+channels	include/header.h	/^  vector<ChannelFloat32> channels;$/;"	m	struct:arc::PointCloud
+char_map_	include/costmap_2d/costmap_2d.h	/^    const unsigned char* char_map_;$/;"	m	class:costmap_2d::Costmap2D::PolygonOutlineCells
+child_frame_id	include/header.h	/^  string child_frame_id;$/;"	m	struct:arc::TransformStamped
+convexFillCells	src/costmap_2d.cpp	/^void Costmap2D::convexFillCells(const std::vector<MapLocation>& polygon, std::vector<MapLocation>& polygon_cells)$/;"	f	class:costmap_2d::Costmap2D
+copyCostmapWindow	src/costmap_2d.cpp	/^bool Costmap2D::copyCostmapWindow(const Costmap2D& map, double win_origin_x, double win_origin_y, double win_size_x,$/;"	f	class:costmap_2d::Costmap2D
+copyMapRegion	include/costmap_2d/costmap_2d.h	/^    void copyMapRegion(data_type* source_map, unsigned int sm_lower_left_x, unsigned int sm_lower_left_y,$/;"	f	class:costmap_2d::Costmap2D
+costarr	include/navfn/navfn.h	/^      COSTTYPE *costarr;		\/**< cost array in 2D configuration space *\/$/;"	m	class:navfn::NavFn
+costmap_	include/costmap_2d/costmap_2d.h	/^    const Costmap2D& costmap_;$/;"	m	class:costmap_2d::Costmap2D::PolygonOutlineCells
+costmap_	include/costmap_2d/costmap_2d.h	/^    unsigned char* costmap_;$/;"	m	class:costmap_2d::Costmap2D::MarkCell
+costmap_	include/costmap_2d/costmap_2d.h	/^  unsigned char* costmap_;$/;"	m	class:costmap_2d::Costmap2D
+costmap_	include/my_navfn/navfn_no_ros.h	/^      costmap_2d_test::Costmap2D_Test* costmap_;$/;"	m	class:navfn::NavfnNoROS
+costmap_2d	include/costmap_2d/cost_values.h	/^namespace costmap_2d$/;"	n
+costmap_2d	include/costmap_2d/costmap_2d.h	/^namespace costmap_2d$/;"	n
+costmap_2d	src/costmap_2d.cpp	/^namespace costmap_2d$/;"	n	file:
+covariance	include/header.h	/^  vector<float> covariance;$/;"	m	struct:arc::PoseWithCovariance
+covariance	include/header.h	/^  vector<float> covariance;$/;"	m	struct:arc::TwistWithCovariance
+create_nav_plan_astar	src/navfn.cpp	/^    create_nav_plan_astar(COSTTYPE *costmap, int nx, int ny,$/;"	f	namespace:navfn
+curP	include/navfn/navfn.h	/^      int *curP, *nextP, *overP;	\/**< priority buffer block ptrs *\/$/;"	m	class:navfn::NavFn
+curPe	include/navfn/navfn.h	/^      int curPe, nextPe, overPe; \/**< end points of arrays *\/$/;"	m	class:navfn::NavFn
+curT	include/navfn/navfn.h	/^      float curT;			\/**< current threshold *\/$/;"	m	class:navfn::NavFn
+data	include/header.h	/^    map<string, string> data;$/;"	m	class:arc::ParameterReader
+data	include/header.h	/^  vector<int8_t> data;$/;"	m	struct:arc::OccupancyGrid
+data	include/header.h	/^  vector<int> data;$/;"	m	struct:arc::OccupancyGridUpdate
+default_value_	include/costmap_2d/costmap_2d.h	/^  unsigned char default_value_;$/;"	m	class:costmap_2d::Costmap2D
+deleteMaps	src/costmap_2d.cpp	/^void Costmap2D::deleteMaps()$/;"	f	class:costmap_2d::Costmap2D
+display	src/navfn.cpp	/^    NavFn::display(void fn(NavFn *nav), int n)$/;"	f	class:navfn::NavFn
+displayFn	include/navfn/navfn.h	/^      void (*displayFn)(NavFn *nav); \/**< display function itself *\/$/;"	m	class:navfn::NavFn
+displayInt	include/navfn/navfn.h	/^      int displayInt;		\/**< save second argument of display() above *\/$/;"	m	class:navfn::NavFn
+frame_id	include/header.h	/^  string frame_id;$/;"	m	struct:arc::Header
+getCharMap	src/costmap_2d.cpp	/^unsigned char* Costmap2D::getCharMap() const$/;"	f	class:costmap_2d::Costmap2D
+getCost	src/costmap_2d.cpp	/^unsigned char Costmap2D::getCost(unsigned int mx, unsigned int my) const$/;"	f	class:costmap_2d::Costmap2D
+getData	include/header.h	/^    string getData( string key )$/;"	f	class:arc::ParameterReader
+getDefaultValue	include/costmap_2d/costmap_2d.h	/^  unsigned char getDefaultValue()$/;"	f	class:costmap_2d::Costmap2D
+getIndex	include/costmap_2d/costmap_2d.h	/^  inline unsigned int getIndex(unsigned int mx, unsigned int my) const$/;"	f	class:costmap_2d::Costmap2D
+getLastPathCost	src/navfn.cpp	/^  float NavFn::getLastPathCost()$/;"	f	class:navfn::NavFn
+getMutex	include/costmap_2d/costmap_2d.h	/^  mutex_t* getMutex()$/;"	f	class:costmap_2d::Costmap2D
+getOriginX	src/costmap_2d.cpp	/^double Costmap2D::getOriginX() const$/;"	f	class:costmap_2d::Costmap2D
+getOriginY	src/costmap_2d.cpp	/^double Costmap2D::getOriginY() const$/;"	f	class:costmap_2d::Costmap2D
+getPathLen	src/navfn.cpp	/^  int    NavFn::getPathLen() { return npath; }$/;"	f	class:navfn::NavFn
+getPathX	src/navfn.cpp	/^  float *NavFn::getPathX() { return pathx; }$/;"	f	class:navfn::NavFn
+getPathY	src/navfn.cpp	/^  float *NavFn::getPathY() { return pathy; }$/;"	f	class:navfn::NavFn
+getPlanFromPotentialNoRos	src/navfn_no_ros.cpp	/^  bool NavfnNoROS::getPlanFromPotentialNoRos(const arc::PoseStamped& goal, std::vector<arc::PoseStamped>& plan){$/;"	f	class:navfn::NavfnNoROS
+getResolution	src/costmap_2d.cpp	/^double Costmap2D::getResolution() const$/;"	f	class:costmap_2d::Costmap2D
+getSizeInCellsX	src/costmap_2d.cpp	/^unsigned int Costmap2D::getSizeInCellsX() const$/;"	f	class:costmap_2d::Costmap2D
+getSizeInCellsY	src/costmap_2d.cpp	/^unsigned int Costmap2D::getSizeInCellsY() const$/;"	f	class:costmap_2d::Costmap2D
+getSizeInMetersX	src/costmap_2d.cpp	/^double Costmap2D::getSizeInMetersX() const$/;"	f	class:costmap_2d::Costmap2D
+getSizeInMetersY	src/costmap_2d.cpp	/^double Costmap2D::getSizeInMetersY() const$/;"	f	class:costmap_2d::Costmap2D
+goal	include/navfn/navfn.h	/^      int goal[2];$/;"	m	class:navfn::NavFn
+gradCell	src/navfn.cpp	/^    NavFn::gradCell(int n)$/;"	f	class:navfn::NavFn
+gradx	include/navfn/navfn.h	/^      float *gradx, *grady;		\/**< gradient arrays, size of potential array *\/$/;"	m	class:navfn::NavFn
+grady	include/navfn/navfn.h	/^      float *gradx, *grady;		\/**< gradient arrays, size of potential array *\/$/;"	m	class:navfn::NavFn
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::LaserScan
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::OccupancyGrid
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::OccupancyGridUpdate
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::Odometry
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::Path
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::PointCloud
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::PointStamped
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::PolygonStamped
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::PoseStamped
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::QuaternionStamped
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::TransformStamped
+header	include/header.h	/^  Header header;$/;"	m	struct:arc::Vector3Stamped
+height	include/header.h	/^  uint32   height;$/;"	m	struct:arc::MapMetaData
+height	include/header.h	/^  uint32 height;$/;"	m	struct:arc::OccupancyGridUpdate
+indexToCells	include/costmap_2d/costmap_2d.h	/^  inline void indexToCells(unsigned int index, unsigned int& mx, unsigned int& my) const$/;"	f	class:costmap_2d::Costmap2D
+info	include/header.h	/^  MapMetaData info;$/;"	m	struct:arc::OccupancyGrid
+initCost	src/navfn.cpp	/^    NavFn::initCost(int k, float v)$/;"	f	class:navfn::NavFn
+initMaps	src/costmap_2d.cpp	/^void Costmap2D::initMaps(unsigned int size_x, unsigned int size_y)$/;"	f	class:costmap_2d::Costmap2D
+initializeNoRos	src/navfn_no_ros.cpp	/^void NavfnNoROS::initializeNoRos(costmap_2d_test::Costmap2D_Test* costmap){$/;"	f	class:navfn::NavfnNoROS
+intensities	include/header.h	/^  vector<float> intensities;$/;"	m	struct:arc::LaserScan
+last_path_cost_	include/navfn/navfn.h	/^      float last_path_cost_; \/**< Holds the cost of the path found the last time A* was called *\/$/;"	m	class:navfn::NavFn
+linear	include/header.h	/^  Linear linear;$/;"	m	struct:arc::Twist
+makePlanNoRos	src/navfn_no_ros.cpp	/^  bool NavfnNoROS::makePlanNoRos(const arc::PoseStamped& start,$/;"	f	class:navfn::NavfnNoROS
+mapToWorld	src/costmap_2d.cpp	/^void Costmap2D::mapToWorld(unsigned int mx, unsigned int my, double& wx, double& wy) const$/;"	f	class:costmap_2d::Costmap2D
+mapToWorld	src/navfn_no_ros.cpp	/^  void NavfnNoROS::mapToWorld(double mx, double my, double& wx, double& wy) {$/;"	f	class:navfn::NavfnNoROS
+mutex_t	include/costmap_2d/costmap_2d.h	/^  typedef boost::recursive_mutex mutex_t;$/;"	t	class:costmap_2d::Costmap2D
+name	include/header.h	/^  string name;$/;"	m	struct:arc::ChannelFloat32
+navfn	include/my_navfn/navfn_no_ros.h	/^namespace navfn {$/;"	n
+navfn	include/navfn/navfn.h	/^namespace navfn {$/;"	n
+navfn	src/navfn.cpp	/^namespace navfn {$/;"	n	file:
+navfn	src/navfn_no_ros.cpp	/^namespace navfn {$/;"	n	file:
+nextP	include/navfn/navfn.h	/^      int *curP, *nextP, *overP;	\/**< priority buffer block ptrs *\/$/;"	m	class:navfn::NavFn
+nextPe	include/navfn/navfn.h	/^      int curPe, nextPe, overPe; \/**< end points of arrays *\/$/;"	m	class:navfn::NavFn
+nobs	include/navfn/navfn.h	/^      int nobs;			\/**< number of obstacle cells *\/$/;"	m	class:navfn::NavFn
+npath	include/navfn/navfn.h	/^      int npath;			\/**< number of path points *\/$/;"	m	class:navfn::NavFn
+npathbuf	include/navfn/navfn.h	/^      int npathbuf;			\/**< size of pathx, pathy buffers *\/$/;"	m	class:navfn::NavFn
+ns	include/navfn/navfn.h	/^      int nx, ny, ns;		\/**< size of grid, in pixels *\/$/;"	m	class:navfn::NavFn
+nx	include/navfn/navfn.h	/^      int nx, ny, ns;		\/**< size of grid, in pixels *\/$/;"	m	class:navfn::NavFn
+ny	include/navfn/navfn.h	/^      int nx, ny, ns;		\/**< size of grid, in pixels *\/$/;"	m	class:navfn::NavFn
+operator ()	include/costmap_2d/costmap_2d.h	/^    inline void operator()(unsigned int offset)$/;"	f	class:costmap_2d::Costmap2D::MarkCell
+operator ()	include/costmap_2d/costmap_2d.h	/^    inline void operator()(unsigned int offset)$/;"	f	class:costmap_2d::Costmap2D::PolygonOutlineCells
+operator =	src/costmap_2d.cpp	/^Costmap2D& Costmap2D::operator=(const Costmap2D& map)$/;"	f	class:costmap_2d::Costmap2D
+orientation	include/header.h	/^  Quaternion orientation;$/;"	m	struct:arc::Pose
+origin	include/header.h	/^  Pose  origin;$/;"	m	struct:arc::MapMetaData
+origin_x_	include/costmap_2d/costmap_2d.h	/^  double origin_x_;$/;"	m	class:costmap_2d::Costmap2D
+origin_y_	include/costmap_2d/costmap_2d.h	/^  double origin_y_;$/;"	m	class:costmap_2d::Costmap2D
+overP	include/navfn/navfn.h	/^      int *curP, *nextP, *overP;	\/**< priority buffer block ptrs *\/$/;"	m	class:navfn::NavFn
+overPe	include/navfn/navfn.h	/^      int curPe, nextPe, overPe; \/**< end points of arrays *\/$/;"	m	class:navfn::NavFn
+pathStep	include/navfn/navfn.h	/^      float pathStep;		\/**< step size for following gradient *\/$/;"	m	class:navfn::NavFn
+pathx	include/navfn/navfn.h	/^      float *pathx, *pathy;		\/**< path points, as subpixel cell coordinates *\/$/;"	m	class:navfn::NavFn
+pathy	include/navfn/navfn.h	/^      float *pathx, *pathy;		\/**< path points, as subpixel cell coordinates *\/$/;"	m	class:navfn::NavFn
+pb1	include/navfn/navfn.h	/^      int *pb1, *pb2, *pb3;		\/**< storage buffers for priority blocks *\/$/;"	m	class:navfn::NavFn
+pb2	include/navfn/navfn.h	/^      int *pb1, *pb2, *pb3;		\/**< storage buffers for priority blocks *\/$/;"	m	class:navfn::NavFn
+pb3	include/navfn/navfn.h	/^      int *pb1, *pb2, *pb3;		\/**< storage buffers for priority blocks *\/$/;"	m	class:navfn::NavFn
+pending	include/navfn/navfn.h	/^      bool    *pending;		\/**< pending cells during propagation *\/$/;"	m	class:navfn::NavFn
+planner_	include/my_navfn/navfn_no_ros.h	/^      boost::shared_ptr<NavFn> planner_;$/;"	m	class:navfn::NavfnNoROS
+point	include/header.h	/^  Point  point;$/;"	m	struct:arc::PointStamped
+points	include/header.h	/^  vector<Point> points;$/;"	m	struct:arc::PointCloud
+points	include/header.h	/^  vector<Point> points;$/;"	m	struct:arc::Polygon
+polygon	include/header.h	/^  Polygon polygon;$/;"	m	struct:arc::PolygonStamped
+polygonOutlineCells	src/costmap_2d.cpp	/^void Costmap2D::polygonOutlineCells(const std::vector<MapLocation>& polygon, std::vector<MapLocation>& polygon_cells)$/;"	f	class:costmap_2d::Costmap2D
+pose	include/header.h	/^  Pose pose;$/;"	m	struct:arc::PoseStamped
+pose	include/header.h	/^  Pose pose;$/;"	m	struct:arc::PoseWithCovariance
+poses	include/header.h	/^  vector<PoseStamped> poses;$/;"	m	struct:arc::Path
+posewithCovariance	include/header.h	/^  PoseWithCovariance posewithCovariance;$/;"	m	struct:arc::Odometry
+position	include/header.h	/^  Point position;$/;"	m	struct:arc::Pose
+potarr	include/navfn/navfn.h	/^      float   *potarr;		\/**< potential array, navigation function potential *\/$/;"	m	class:navfn::NavFn
+priInc	include/navfn/navfn.h	/^      float priInc;			\/**< priority threshold increment *\/$/;"	m	class:navfn::NavFn
+propNavFnAstar	src/navfn.cpp	/^    NavFn::propNavFnAstar(int cycles)	$/;"	f	class:navfn::NavFn
+propNavFnDijkstra	src/navfn.cpp	/^    NavFn::propNavFnDijkstra(int cycles, bool atStart)	$/;"	f	class:navfn::NavFn
+push_cur	src/navfn.cpp	401;"	d	file:
+push_next	src/navfn.cpp	404;"	d	file:
+push_over	src/navfn.cpp	407;"	d	file:
+quaternion	include/header.h	/^  Quaternion quaternion;$/;"	m	struct:arc::QuaternionStamped
+range_max	include/header.h	/^  float  range_max;$/;"	m	struct:arc::LaserScan
+range_min	include/header.h	/^  float  range_min;$/;"	m	struct:arc::LaserScan
+ranges	include/header.h	/^  vector<float> ranges;$/;"	m	struct:arc::LaserScan
+raytraceLine	include/costmap_2d/costmap_2d.h	/^    inline void raytraceLine(ActionType at, unsigned int x0, unsigned int y0, unsigned int x1, unsigned int y1,$/;"	f	class:costmap_2d::Costmap2D
+resetMap	src/costmap_2d.cpp	/^void Costmap2D::resetMap(unsigned int x0, unsigned int y0, unsigned int xn, unsigned int yn)$/;"	f	class:costmap_2d::Costmap2D
+resetMaps	src/costmap_2d.cpp	/^void Costmap2D::resetMaps()$/;"	f	class:costmap_2d::Costmap2D
+resizeMap	src/costmap_2d.cpp	/^void Costmap2D::resizeMap(unsigned int size_x, unsigned int size_y, double resolution,$/;"	f	class:costmap_2d::Costmap2D
+resolution	include/header.h	/^  float resolution;$/;"	m	struct:arc::MapMetaData
+resolution_	include/costmap_2d/costmap_2d.h	/^  double resolution_;$/;"	m	class:costmap_2d::Costmap2D
+rotation	include/header.h	/^  Quaternion rotation;$/;"	m	struct:arc::Transform
+saveMap	src/costmap_2d.cpp	/^bool Costmap2D::saveMap(std::string file_name)$/;"	f	class:costmap_2d::Costmap2D
+savemap	src/navfn.cpp	/^    NavFn::savemap(const char *fname)$/;"	f	class:navfn::NavFn
+scan_time	include/header.h	/^  float  scan_time;$/;"	m	struct:arc::LaserScan
+seq	include/header.h	/^  uint32 seq;$/;"	m	struct:arc::Header
+setConvexPolygonCost	src/costmap_2d.cpp	/^bool Costmap2D::setConvexPolygonCost(const std::vector<geometry_msgs::Point>& polygon, unsigned char cost_value)$/;"	f	class:costmap_2d::Costmap2D
+setCost	src/costmap_2d.cpp	/^void Costmap2D::setCost(unsigned int mx, unsigned int my, unsigned char cost)$/;"	f	class:costmap_2d::Costmap2D
+setCostmap	src/navfn.cpp	/^    NavFn::setCostmap(const COSTTYPE *cmap, bool isROS, bool allow_unknown)$/;"	f	class:navfn::NavFn
+setDefaultValue	include/costmap_2d/costmap_2d.h	/^  void setDefaultValue(unsigned char c)$/;"	f	class:costmap_2d::Costmap2D
+setGoal	src/navfn.cpp	/^    NavFn::setGoal(int *g)$/;"	f	class:navfn::NavFn
+setNavArr	src/navfn.cpp	/^    NavFn::setNavArr(int xs, int ys)$/;"	f	class:navfn::NavFn
+setObs	src/navfn.cpp	/^    NavFn::setObs()$/;"	f	class:navfn::NavFn
+setStart	src/navfn.cpp	/^    NavFn::setStart(int *g)$/;"	f	class:navfn::NavFn
+setupNavFn	src/navfn.cpp	/^    NavFn::setupNavFn(bool keepit)$/;"	f	class:navfn::NavFn
+sign	include/costmap_2d/costmap_2d.h	/^  inline int sign(int x)$/;"	f	class:costmap_2d::Costmap2D
+size_x_	include/costmap_2d/costmap_2d.h	/^  unsigned int size_x_;$/;"	m	class:costmap_2d::Costmap2D
+size_y_	include/costmap_2d/costmap_2d.h	/^  unsigned int size_y_;$/;"	m	class:costmap_2d::Costmap2D
+stamp	include/header.h	/^  time_t stamp;$/;"	m	struct:arc::Header
+start	include/navfn/navfn.h	/^      int start[2];$/;"	m	class:navfn::NavFn
+time_increment	include/header.h	/^  float  time_increment;$/;"	m	struct:arc::LaserScan
+transform	include/header.h	/^  Transform transform;$/;"	m	struct:arc::TransformStamped
+translation	include/header.h	/^  Vector3 translation;$/;"	m	struct:arc::Transform
+twist	include/header.h	/^  Twist twist;$/;"	m	struct:arc::TwistWithCovariance
+twistWithCovariance	include/header.h	/^  TwistWithCovariance twistWithCovariance;$/;"	m	struct:arc::Odometry
+uint32	include/header.h	/^typedef  uint32_t uint32;$/;"	t
+updateCell	src/navfn.cpp	/^    NavFn::updateCell(int n)$/;"	f	class:navfn::NavFn
+updateCellAstar	src/navfn.cpp	/^    NavFn::updateCellAstar(int n)$/;"	f	class:navfn::NavFn
+updateOrigin	src/costmap_2d.cpp	/^void Costmap2D::updateOrigin(double new_origin_x, double new_origin_y)$/;"	f	class:costmap_2d::Costmap2D
+value_	include/costmap_2d/costmap_2d.h	/^    unsigned char value_;$/;"	m	class:costmap_2d::Costmap2D::MarkCell
+values	include/header.h	/^  vector<float> values;$/;"	m	struct:arc::ChannelFloat32
+vector	include/header.h	/^  Vector3 vector;$/;"	m	struct:arc::Vector3Stamped
+w	include/header.h	/^  float w;$/;"	m	struct:arc::Quaternion
+width	include/header.h	/^  uint32   width;$/;"	m	struct:arc::MapMetaData
+width	include/header.h	/^  uint32 width;$/;"	m	struct:arc::OccupancyGridUpdate
+worldToMap	src/costmap_2d.cpp	/^bool Costmap2D::worldToMap(double wx, double wy, unsigned int& mx, unsigned int& my) const$/;"	f	class:costmap_2d::Costmap2D
+worldToMapEnforceBounds	src/costmap_2d.cpp	/^void Costmap2D::worldToMapEnforceBounds(double wx, double wy, int& mx, int& my) const$/;"	f	class:costmap_2d::Costmap2D
+worldToMapNoBounds	src/costmap_2d.cpp	/^void Costmap2D::worldToMapNoBounds(double wx, double wy, int& mx, int& my) const$/;"	f	class:costmap_2d::Costmap2D
+x	include/costmap_2d/costmap_2d.h	/^  unsigned int x;$/;"	m	struct:costmap_2d::MapLocation
+x	include/header.h	/^  float x;$/;"	m	struct:arc::Angular
+x	include/header.h	/^  float x;$/;"	m	struct:arc::Linear
+x	include/header.h	/^  float x;$/;"	m	struct:arc::Point
+x	include/header.h	/^  float x;$/;"	m	struct:arc::Quaternion
+x	include/header.h	/^  float x;$/;"	m	struct:arc::Vector3
+x	include/header.h	/^  int x;$/;"	m	struct:arc::OccupancyGridUpdate
+x	include/header.h	/^  int x;$/;"	m	struct:arc::Position2DInt
+y	include/costmap_2d/costmap_2d.h	/^  unsigned int y;$/;"	m	struct:costmap_2d::MapLocation
+y	include/header.h	/^  float y;$/;"	m	struct:arc::Angular
+y	include/header.h	/^  float y;$/;"	m	struct:arc::Linear
+y	include/header.h	/^  float y;$/;"	m	struct:arc::Point
+y	include/header.h	/^  float y;$/;"	m	struct:arc::Quaternion
+y	include/header.h	/^  float y;$/;"	m	struct:arc::Vector3
+y	include/header.h	/^  int y;$/;"	m	struct:arc::OccupancyGridUpdate
+y	include/header.h	/^  int y;$/;"	m	struct:arc::Position2DInt
+z	include/header.h	/^  float z;$/;"	m	struct:arc::Angular
+z	include/header.h	/^  float z;$/;"	m	struct:arc::Linear
+z	include/header.h	/^  float z;$/;"	m	struct:arc::Point
+z	include/header.h	/^  float z;$/;"	m	struct:arc::Quaternion
+z	include/header.h	/^  float z;$/;"	m	struct:arc::Vector3
+~Costmap2D	src/costmap_2d.cpp	/^Costmap2D::~Costmap2D()$/;"	f	class:costmap_2d::Costmap2D
+~NavFn	src/navfn.cpp	/^  NavFn::~NavFn()$/;"	f	class:navfn::NavFn
+~NavfnNoROS	include/my_navfn/navfn_no_ros.h	/^      ~NavfnNoROS(){}$/;"	f	class:navfn::NavfnNoROS

@@ -1,0 +1,200 @@
+cmake_minimum_required(VERSION 2.8)
+project(costmap_2d.new)
+SET(CMAKE_TOOLCHAIN_FILE "/home/zach/pepper_toolchain/ctc-linux64-atom-2.5.2.74/share/cmake/toolchain/linux64_cross_x86/cross-config.cmake")
+SET(TOOLCHAIN_PATH "/home/zach/pepper_toolchain/ctc-linux64-atom-2.5.2.74")
+
+find_package(qibuild REQUIRED)
+message(STATUS "[main]:CMAKE_TOOLCHAIN_FILE:" ${CMAKE_TOOLCHAIN_FILE})
+include_directories(include)
+include_directories(${TOOLCHAIN_PATH}/eigen3/include/eigen3)
+include_directories(${TOOLCHAIN_PATH}/rosbag/include)
+include_directories(${TOOLCHAIN_PATH}/console_bridge/include)
+
+message(STATUS "[main]:CMAKE_CXX_FLAGS: " ${CMAKE_CXX_FLAGS})
+message(STATUS "[main]:BINARY dir: " ${PROJECT_BINARY_DIR})
+message(STATUS "[main]:SOURCE dir: " ${PROJECT_SOURCE_DIR})
+SET(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/lib)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+LINK_DIRECTORIES(${PROJECT_SOURCE_DIR}/lib)
+
+add_library(costmap_2d
+  src/array_parser.cpp
+  src/costmap_2d.cpp
+  src/observation_buffer.cpp
+  src/layer.cpp
+  src/layered_costmap.cpp
+  src/costmap_2d_ros.cpp
+  src/costmap_math.cpp
+  src/footprint.cpp
+  src/costmap_layer.cpp
+)
+
+add_library(layers
+  src/inflation_layer.cpp
+  src/obstacle_layer.cpp
+  src/static_layer.cpp
+  src/observation_buffer.cpp
+)
+
+target_link_libraries(layers
+  costmap_2d
+)
+
+set(CMAKE_PREFIX_PATH
+	${TOOLCHAIN_PATH}/opencv2
+	${TOOLCHAIN_PATH}/boost
+	${TOOLCHAIN_PATH}/pthread
+	)
+
+message(STATUS "[main]:cmake_prefix_path:" ${CMAKE_PREFIX_PATH})
+
+message("find pthread packages")
+
+find_package(pthread REQUIRED)
+if (pthread_FOUND)
+	message(STATUS "[main]:pthread_include_dirs:" ${PTHREAD_INCLUDE_DIRS})
+	message(STATUS "[main]:pthread_libraries:" ${PTHREAD_LIBRARIES})
+	include_directories(${PTHREAD_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${PTHREAD_LIBRARIES})
+	target_link_libraries(layers ${PTHREAD_LIBRARIES})
+endif()
+
+message("find opencv packages")
+
+find_package(opencv2_core REQUIRED)
+if (opencv2_core_FOUND)
+	message(STATUS "[main]:opencv2_core_include_dirs:" ${OPENCV2_CORE_INCLUDE_DIRS})
+	message(STATUS "[main]:opencv2_core_libraries:" ${OPENCV2_CORE_LIBRARIES})
+	include_directories(${OPENCV2_CORE_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${OPENCV2_CORE_LIBRARIES})
+	target_link_libraries(layers ${OPENCV2_CORE_LIBRARIES})
+endif()
+
+find_package(opencv2_highgui REQUIRED)
+if (opencv2_highgui_FOUND)
+	message(STATUS "[main]:opencv2_highgui_include_dirs:" ${OPENCV2_HIGHGUI_INCLUDE_DIRS})
+	message(STATUS "[main]:opencv2_highgui_libraries:" ${OPENCV2_HIGHGUI_LIBRARIES})
+	include_directories(${OPENCV2_HIGHGUI_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${OPENCV2_HIGHGUI_LIBRARIES})
+	target_link_libraries(layers ${OPENCV2_HIGHGUI_LIBRARIES})
+endif()
+
+find_package(opencv2_imgproc REQUIRED)
+if (opencv2_imgproc_FOUND)
+    message(STATUS "[main]:opencv2_imgproc_include_dirs:" ${OPENCV2_IMGPROC_INCLUDE_DIRS})
+    message(STATUS "[main]:opencv2_imgproc_libraries:" ${OPENCV2_IMGPROC_LIBRARIES})
+    include_directories(${OPENCV2_IMGPROC_INCLUDE_DIRS})
+    target_link_libraries(costmap_2d ${OPENCV2_IMGPROC_LIBRARIES})
+    target_link_libraries(layers ${OPENCV2_IMGPROC_LIBRARIES})
+endif()
+
+find_package(opencv2_calib3d REQUIRED)
+if (opencv2_calib3d_FOUND)
+    message(STATUS "[main]:opencv2_calib3d_include_dirs:" ${OPENCV2_CALIB3D_INCLUDE_DIRS})
+    message(STATUS "[main]:opencv2_calib3d_libraries:" ${OPENCV2_CALIB3D_LIBRARIES})
+    include_directories(${OPENCV2_CALIB3D_INCLUDE_DIRS})
+    target_link_libraries(costmap_2d ${OPENCV2_CALIB3D_LIBRARIES})
+    target_link_libraries(layers ${OPENCV2_CALIB3D_LIBRARIES})
+endif()
+
+find_package(opencv2_flann REQUIRED)
+if (opencv2_flann_FOUND)
+    message(STATUS "[main]:opencv2_flann_include_dirs:" ${OPENCV2_FLANN_INCLUDE_DIRS})
+    message(STATUS "[main]:opencv2_flann_libraries:" ${OPENCV2_FLANN_LIBRARIES})
+    include_directories(${OPENCV2_FLANN_INCLUDE_DIRS})
+    target_link_libraries(costmap_2d ${OPENCV2_FLANN_LIBRARIES})
+    target_link_libraries(layers ${OPENCV2_FLANN_LIBRARIES})
+endif()
+
+find_package(opencv2_features2d REQUIRED)
+if (opencv2_features2d_FOUND)
+    message(STATUS "[main]:opencv2_features2d_include_dirs:" ${OPENCV2_FEATURES2D_INCLUDE_DIRS})
+    message(STATUS "[main]:opencv2_features2d_libraries:" ${OPENCV2_FEATURES2D_LIBRARIES})
+    include_directories(${OPENCV2_FEATURES2D_INCLUDE_DIRS})
+    target_link_libraries(costmap_2d ${OPENCV2_FEATURES2D_LIBRARIES})
+    target_link_libraries(layers ${OPENCV2_FEATURES2D_LIBRARIES})
+endif()
+
+find_package(opencv2_nonfree REQUIRED)
+if (opencv2_nonfree_FOUND)
+    message(STATUS "[main]:opencv2_nonfree_include_dirs:" ${OPENCV2_NONFREE_INCLUDE_DIRS})
+    message(STATUS "[main]:opencv2_nonfree_libraries:" ${OPENCV2_NONFREE_LIBRARIES})
+    include_directories(${OPENCV2_NONFREE_INCLUDE_DIRS})
+    target_link_libraries(costmap_2d ${OPENCV2_NONFREE_LIBRARIES})
+    target_link_libraries(layers ${OPENCV2_NONFREE_LIBRARIES})
+endif()
+
+
+message("find boost packages")
+
+find_package(boost REQUIRED)
+if (boost_FOUND)
+	message(STATUS "[main]:boost_include_dirs:" ${BOOST_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_libraries:" ${BOOST_LIBRARIES})
+	include_directories(${BOOST_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_LIBRARIES})
+	target_link_libraries(layers ${BOOST_LIBRARIES})
+endif()
+
+find_package(boost_system REQUIRED)
+if (boost_system_FOUND)
+	message(STATUS "[main]:boost_system_include_dirs:" ${BOOST_SYSTEM_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_system_libraries:" ${BOOST_SYSTEM_LIBRARIES})
+	include_directories(${BOOST_SYSTEM_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_SYSTEM_LIBRARIES})
+	target_link_libraries(layers ${BOOST_SYSTEM_LIBRARIES})
+endif()
+
+find_package(boost_chrono REQUIRED)
+if (boost_chrono_FOUND)
+	message(STATUS "[main]:boost_chrono_include_dirs:" ${BOOST_CHRONO_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_chrono_libraries:" ${BOOST_CHRONO_LIBRARIES})
+	include_directories(${BOOST_CHRONO_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_CHRONO_LIBRARIES})
+	target_link_libraries(layers ${BOOST_CHRONO_LIBRARIES})
+endif()
+
+find_package(boost_filesystem REQUIRED)
+if (boost_filesystem_FOUND)
+	message(STATUS "[main]:boost_filesystem_include_dirs:" ${BOOST_FILESYSTEM_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_filesystem_libraries:" ${BOOST_FILESYSTEM_LIBRARIES})
+	include_directories(${BOOST_FILESYSTEM_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_FILESYSTEM_LIBRARIES})
+	target_link_libraries(layers ${BOOST_FILESYSTEM_LIBRARIES})
+endif()
+
+find_package(boost_locale REQUIRED)
+if (boost_locale_FOUND)
+	message(STATUS "[main]:boost_locale_include_dirs:" ${BOOST_LOCALE_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_locale_libraries:" ${BOOST_LOCALE_LIBRARIES})
+	include_directories(${BOOST_LOCALE_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_LOCALE_LIBRARIES})
+	target_link_libraries(layers ${BOOST_LOCALE_LIBRARIES})
+endif()
+
+find_package(boost_thread REQUIRED)
+if (boost_thread_FOUND)
+	message(STATUS "[main]:boost_thread_include_dirs:" ${BOOST_THREAD_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_thread_libraries:" ${BOOST_THREAD_LIBRARIES})
+	include_directories(${BOOST_THREAD_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_THREAD_LIBRARIES})
+	target_link_libraries(layers ${BOOST_THREAD_LIBRARIES})
+endif()
+
+find_package(boost_regex REQUIRED)
+if (boost_regex_FOUND)
+	message(STATUS "[main]:boost_regex_include_dirs:" ${BOOST_REGEX_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_regex_libraries:" ${BOOST_REGEX_LIBRARIES})
+	include_directories(${BOOST_REGEX_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_REGEX_LIBRARIES})
+	target_link_libraries(layers ${BOOST_REGEX_LIBRARIES})
+endif()
+
+find_package(boost_program_options REQUIRED)
+if (boost_program_options_FOUND)
+	message(STATUS "[main]:boost_program_include_dirs:" ${BOOST_PROGRAM_OPTIONS_INCLUDE_DIRS})
+	message(STATUS "[main]:boost_program_libraries:" ${BOOST_PROGRAM_OPTIONS_LIBRARIES})
+	include_directories(${BOOST_PROGRAM_OPTIONS_INCLUDE_DIRS})
+	target_link_libraries(costmap_2d ${BOOST_PROGRAM_OPTIONS_LIBRARIES})
+	target_link_libraries(layers ${BOOST_PROGRAM_OPTIONS_LIBRARIES})
+endif()

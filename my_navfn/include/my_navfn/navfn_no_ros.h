@@ -2,9 +2,8 @@
 #define MY_NAVFN_NAVFN_NO_ROS_H_
 
 #include <navfn/navfn.h>
-#include <costmap_2d_test/costmap_2d_test.h>
+#include <costmap_2d/costmap_2d_test.h>
 #include <vector>
-#include <costmap_2d_test/header.h>
 namespace navfn {
   class NavfnNoROS {
     public:
